@@ -1,2 +1,3 @@
 # StyleGuide-Flask-App
-Recomendations as above your picks
+https://www.kaggle.com/datasets/hamzakhanswati117191/modified-fashion-dataset
+used dataset
