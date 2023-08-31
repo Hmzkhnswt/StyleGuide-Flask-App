@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation Results</title>
+</head>
+<body>
+    <h1>Recommendation Results</h1>
+    <h2>Query Image</h2>
+    <img src="{{ url_for('static', filename=query_image) }}" alt="Query Image">
+    
+    <h2>Recommended Images</h2>
+    <div>
+        {% for image_path in recommended_images %}
+            <img src="{{ url_for('static', filename=image_path) }}" alt="Recommended Image">
+        {% endfor %}
+    </div>
+</body>
+</html>
